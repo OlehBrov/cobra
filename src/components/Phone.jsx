@@ -1,6 +1,6 @@
 import { cn } from "@/lib/utils";
 
-const Phone = ({ imgSrc, className, dark = false, ...props }) => {
+const Phone = ({ imgsrc, className, dark = false, ...props }) => {
   return (
     <div
       className={cn(
@@ -19,7 +19,7 @@ const Phone = ({ imgSrc, className, dark = false, ...props }) => {
               alt="phone image"
           />
           <div className="absolute -z-10 inset-0">
-              <img className="object-cover" src={ imgSrc} alt="overlaying photo"/>
+              <img className="object-cover min-w-full min-h-full" src={ imgsrc} alt="overlaying photo"/>
           </div>
     </div>
   );
